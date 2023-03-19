@@ -58,3 +58,6 @@ lsp.nvim_workspace()
 lsp.setup()
 
 require("nvim-tree").setup()
+
+-- Opens the file tree on startup, because why not?
+vim.cmd("NvimTreeToggle")

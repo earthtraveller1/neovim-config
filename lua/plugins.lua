@@ -55,9 +55,12 @@ local function plugins(use)
             }
         }
 
+        -- For a navigation tree
         use('nvim-tree/nvim-tree.lua')
-
         use('nvim-tree/nvim-web-devicons')
+
+        -- ThePrimeagen's plugin.
+        use { "ThePrimeagen/harpoon", requires = { { 'nvim-lua/plenary.nvim' }} }
 end
 
 return packer.startup(plugins)
