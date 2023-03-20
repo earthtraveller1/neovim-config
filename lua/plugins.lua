@@ -61,6 +61,9 @@ local function plugins(use)
 
         -- ThePrimeagen's plugin.
         use { "ThePrimeagen/harpoon", requires = { { 'nvim-lua/plenary.nvim' }} }
+
+        -- Tabs.
+        use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 end
 
 return packer.startup(plugins)
