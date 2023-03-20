@@ -26,3 +26,12 @@ vim.keymap.set("n", "<C-a>", function() harpoon_ui.nav_file(2) end)
 vim.keymap.set("n", "<C-z>", function() harpoon_ui.nav_file(3) end)
 vim.keymap.set("n", "<C-n>", harpoon_ui.nav_next)
 vim.keymap.set("n", "<C-e>", harpoon_ui.nav_prev)
+
+-- Debugger keymaps
+
+local dap = require("dap")
+vim.keymap.set("n", "<leader>bp", dap.toggle_breakpoint)
+vim.keymap.set("n", "<leader>dc", dap.continue)
+vim.keymap.set("n", "<leader>so", dap.step_over)
+vim.keymap.set("n", "<leader>si", dap.step_into)
+

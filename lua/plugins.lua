@@ -25,7 +25,7 @@ local function plugins(use)
         -- Treesitter for better syntax highlighting.
         use {
             'nvim-treesitter/nvim-treesitter', name = 'nvim-treesitter',
-            run = ":TSUpdate"
+            run = ":TSUpdate", tag = "v0.8.5.2"
         }
 
         -- Discord Rich Presence plugin.
@@ -67,6 +67,9 @@ local function plugins(use)
 
         -- Git integration.
         use "tpope/vim-fugitive"
+
+        -- Debugger integration
+        use "mfussenegger/nvim-dap"
 end
 
 return packer.startup(plugins)
