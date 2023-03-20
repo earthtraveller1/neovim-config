@@ -1,7 +1,7 @@
 -- This is the file that manages all of the plugins, through the package manager
 -- known as Packer
 
-vim.cmd [[packadd packer.nvim]]
+vim.cmd ([[packadd packer.nvim]])
 
 local packer = require("packer")
 
