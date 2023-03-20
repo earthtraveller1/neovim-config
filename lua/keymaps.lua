@@ -27,3 +27,9 @@ vim.keymap.set("n", "<C-z>", function() harpoon_ui.nav_file(3) end)
 vim.keymap.set("n", "<C-n>", harpoon_ui.nav_next)
 vim.keymap.set("n", "<C-e>", harpoon_ui.nav_prev)
 
+-- For making the Git panel show up on the side instead of the side.
+vim.api.nvim_create_user_command('Hgit', function(_)
+    vim.cmd("Git")
+    vim.cmd(vim.api.nvim_replace_termcodes("normal <C-w>L<C-w>20<", true, true, true))
+end, {})
+
