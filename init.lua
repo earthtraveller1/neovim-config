@@ -47,7 +47,7 @@ require("presence").setup({
 
 -- Configuring the LSP.
 local lsp = require('lsp-zero').preset({
-  name = 'minimal',
+  name = 'recommended',
   set_lsp_keymaps = true,
   manage_nvim_cmp = true,
   suggest_lsp_servers = false,
