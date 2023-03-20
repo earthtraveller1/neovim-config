@@ -64,6 +64,9 @@ local function plugins(use)
 
         -- Tabs.
         use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+
+        -- Git integration.
+        use "tpope/vim-fugitive"
 end
 
 return packer.startup(plugins)
