@@ -211,5 +211,12 @@ vim.api.nvim_create_autocmd('FileType', {
     pattern = 'NvimTree', -- or any other filetree's `ft`
 })
 
+require("catppuccin").setup({
+    flavour = "mocha",
+    transparent_background = true
+})
+
+vim.cmd.colorscheme("catppuccin")
+
 -- Opens the file tree on startup, because why not?
 vim.cmd("NvimTreeToggle")
