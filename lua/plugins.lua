@@ -18,8 +18,7 @@ local function plugins(use)
 
 	-- The color-scheme that I am using.
 	use {
-		'catppuccin/nvim', name = 'catppuccin',
-		config = function() vim.cmd.colorscheme "catppuccin" end
+		'catppuccin/nvim', as = 'catppuccin',
 	}
 
         -- Treesitter for better syntax highlighting.
