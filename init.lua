@@ -10,6 +10,8 @@ vim.opt.relativenumber = true
 vim.opt.wrap = false
 vim.opt.autoread = true
 
+vim.opt.scrolloff = 16
+
 -- Disabled netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
