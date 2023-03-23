@@ -37,3 +37,15 @@ vim.api.nvim_create_user_command('Hgit', function(_)
     vim.cmd(vim.api.nvim_replace_termcodes("normal <C-w>L<C-w>20<", true, true, true))
 end, {})
 
+-- Opens an integrated terminal
+vim.api.nvim_create_user_command("Term", function(_)
+    vim.cmd(vim.api.nvim_replace_termcodes("normal <C-w>s<C-w>10+<C-w>j", true, true, true))
+    if jit.os == "Windows" then
+       vim.cmd.terminal("pwsh")
+    end
+
+    if jit.os == "Linux" then
+        vim.cmd.terminal("bash")
+    end
+end, {})
+
