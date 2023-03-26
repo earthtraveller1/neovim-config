@@ -1,4 +1,3 @@
-require("keymaps.barbar")
 -- This file basically contains all of the keymaps that I use
 -- for NeoVim.
 
