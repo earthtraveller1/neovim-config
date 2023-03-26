@@ -12,5 +12,7 @@ vim.opt.autoread = true
 
 vim.opt.scrolloff = 8
 
+require("nvim-tree").setup()
+
 -- Opens the file tree on startup, because why not?
 vim.cmd("NvimTreeToggle")

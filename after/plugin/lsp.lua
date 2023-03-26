@@ -10,5 +10,6 @@ lsp.nvim_workspace()
 
 lsp.setup()
 
-require("nvim-tree").setup()
+-- LSP keymaps
+vim.keymap.set("n", "<leader>fb", vim.lsp.buf.format)
 
