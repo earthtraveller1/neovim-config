@@ -17,7 +17,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- Treesitter settings
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all" (the five listed parsers should always be installed)
     ensure_installed = { "c", "lua", "rust", "cpp", "typescript", "python", "help", "query" },
 
@@ -36,7 +36,6 @@ require'nvim-treesitter.configs'.setup {
 
     highlight = {
         enable = true,
-
         -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
         -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
         -- Using this option may slow down your editor, and you may see some duplicate highlights.
@@ -59,23 +58,22 @@ require("presence").setup({
     buttons             = true,                       -- Configure Rich Presence button(s), either a boolean to enable/disable, a static table (`{{ label = "<label>", url = "<url>" }, ...}`, or a function(buffer: string, repo_url: string|nil): table)
     file_assets         = {},                         -- Custom file asset definitions keyed by file names and extensions (see default config at `lua/presence/file_assets.lua` for reference)
     show_time           = true,                       -- Show the timer
-
     -- Rich Presence text options
-    editing_text        = "Editing %s",               -- Format string rendered when an editable file is loaded in the buffer (either string or function(filename: string): string)
-    file_explorer_text  = "Browsing %s",              -- Format string rendered when browsing a file explorer (either string or function(file_explorer_name: string): string)
-    git_commit_text     = "Committing changes",       -- Format string rendered when committing changes in git (either string or function(filename: string): string)
-    plugin_manager_text = "Managing plugins",         -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
-    reading_text        = "Reading %s",               -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
-    workspace_text      = "Working on %s",            -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
-    line_number_text    = "Line %s out of %s",        -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
+    editing_text        = "Editing %s",         -- Format string rendered when an editable file is loaded in the buffer (either string or function(filename: string): string)
+    file_explorer_text  = "Browsing %s",        -- Format string rendered when browsing a file explorer (either string or function(file_explorer_name: string): string)
+    git_commit_text     = "Committing changes", -- Format string rendered when committing changes in git (either string or function(filename: string): string)
+    plugin_manager_text = "Managing plugins",   -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
+    reading_text        = "Reading %s",         -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
+    workspace_text      = "Working on %s",      -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
+    line_number_text    = "Line %s out of %s",  -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
 })
 
 -- Configuring the LSP.
 local lsp = require('lsp-zero').preset({
-  name = 'recommended',
-  set_lsp_keymaps = true,
-  manage_nvim_cmp = true,
-  suggest_lsp_servers = false,
+    name = 'recommended',
+    set_lsp_keymaps = true,
+    manage_nvim_cmp = true,
+    suggest_lsp_servers = false,
 })
 
 -- (Optional) Configure lua language server for neovim
@@ -84,37 +82,6 @@ lsp.nvim_workspace()
 lsp.setup()
 
 require("nvim-tree").setup()
-
--- Make it so that the tabs are offset
-vim.api.nvim_create_autocmd('FileType', {
-    callback = function(tbl)
-        local set_offset = require('bufferline.api').set_offset
-
-        local bufwinid
-        local last_width
-        local autocmd = vim.api.nvim_create_autocmd('WinScrolled', {
-            callback = function()
-                bufwinid = bufwinid or vim.fn.bufwinid(tbl.buf)
-
-                local width = vim.api.nvim_win_get_width(bufwinid)
-                if width ~= last_width then
-                    set_offset(width, 'FileTree')
-                    last_width = width
-                end
-            end,
-        })
-
-        vim.api.nvim_create_autocmd('BufWipeout', {
-            buffer = tbl.buf,
-            callback = function()
-                vim.api.nvim_del_autocmd(autocmd)
-                set_offset(0)
-            end,
-            once = true,
-        })
-    end,
-    pattern = 'NvimTree', -- or any other filetree's `ft`
-})
 
 require("catppuccin").setup({
     flavour = "mocha",
