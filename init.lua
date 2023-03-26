@@ -1,5 +1,5 @@
-require("plugins")
-require("keymaps")
+require("earthtraveller1.plugins")
+require("earthtraveller1.keymaps")
 
 -- Place where all my settings go
 
