@@ -9,8 +9,8 @@ vim.keymap.set("n", "<leader>pv", function() vim.cmd("Ex") end)
 vim.keymap.set({ "n", "i" }, "<C-u>", "<C-u>zz") -- These two are for moving.
 vim.keymap.set({ "n", "i" }, "<C-d>", "<C-d>zz")
 
-vim.keymap.set({ "n", "v" }, "<leader>y", "\"*y")
-vim.keymap.set({ "n", "v" }, "<leader>p", "\"*p")
+vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y")
+vim.keymap.set({ "n", "v" }, "<leader>p", "\"+p")
 
 -- For making the Git panel show up on the side instead of above.
 vim.api.nvim_create_user_command('Hgit', function(_)
