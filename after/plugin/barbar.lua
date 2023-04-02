@@ -47,7 +47,7 @@ require 'bufferline'.setup {
     animation = false,
 
     -- Enable/disable auto-hiding the tab bar when there is a single buffer
-    auto_hide = false,
+    auto_hide = true,
 
     -- Enable/disable current/total tabpages indicator (top right corner)
     tabpages = true,
@@ -103,8 +103,8 @@ require 'bufferline'.setup {
         -- Configure the icons on the bufferline based on the visibility of a buffer.
         -- Supports all the base icon options, plus `modified` and `pinned`.
         alternate = { filetype = { enabled = false } },
-        current = { buffer_index = true },
-        inactive = { button = '×' },
+        current = { buffer_index = false },
+        inactive = { button = '×', buffer_index = true},
         visible = { modified = { buffer_number = false } },
     },
 
@@ -114,7 +114,7 @@ require 'bufferline'.setup {
     insert_at_start = false,
 
     -- Sets the maximum padding width with which to surround each tab
-    maximum_padding = 1,
+    maximum_padding = 5,
 
     -- Sets the minimum padding width with which to surround each tab
     minimum_padding = 1,
