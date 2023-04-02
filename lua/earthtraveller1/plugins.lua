@@ -66,6 +66,11 @@ local function plugins(use)
 
         -- Git integration.
         use "tpope/vim-fugitive"
+
+        use {
+            'nvim-lualine/lualine.nvim',
+            requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        }
 end
 
 return packer.startup(plugins)
