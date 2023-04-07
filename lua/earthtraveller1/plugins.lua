@@ -62,7 +62,7 @@ local function plugins(use)
         use { "ThePrimeagen/harpoon", requires = { { 'nvim-lua/plenary.nvim' }} }
 
         -- Tabs.
-        use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+        use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 
         -- Git integration.
         use "tpope/vim-fugitive"
