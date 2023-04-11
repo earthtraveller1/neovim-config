@@ -8,6 +8,19 @@ local lsp = require('lsp-zero').preset({
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()
 
+-- Configure Python language server.
+lsp.configure('pylsp', {
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    enabled = false
+                }
+            }
+        }
+    }
+})
+
 lsp.setup()
 
 -- LSP keymaps
