@@ -8,6 +8,13 @@ local lsp = require('lsp-zero').preset({
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()
 
+-- Ensure that certain languages are installed.
+lsp.ensure_installed {
+    'pylsp',
+    'clangd',
+    'rust_analyzer'
+}
+
 -- Configure Python language server.
 lsp.configure('pylsp', {
     settings = {
