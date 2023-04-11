@@ -20,6 +20,11 @@ lsp.configure('pylsp', {
     settings = {
         pylsp = {
             plugins = {
+                jedi = {
+                    extra_paths = {
+                        "C:/Users/Yue/AppData/Local/Programs/Python/Python311/Lib/site-packages"
+                    }
+                },
                 pycodestyle = {
                     enabled = false
                 }
@@ -33,7 +38,7 @@ lsp.setup()
 -- LSP keymaps
 vim.keymap.set("n", "<leader>fb", vim.lsp.buf.format)
 
-cfg = {
+local cfg = {
     debug = false, -- set to true to enable debug logging
     log_path = vim.fn.stdpath("cache") .. "/lsp_signature.log", -- log dir when debug is on
     -- default is  ~/.cache/nvim/lsp_signature.log
