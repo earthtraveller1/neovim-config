@@ -75,6 +75,10 @@ local function plugins(use)
 
         -- Fast navigation.
         use 'ggandor/leap.nvim'
+
+        -- Debugger.
+        use 'mfussenegger/nvim-dap' 
+        use 'rcarriga/nvim-dap-ui'
 end
 
 return packer.startup(plugins)

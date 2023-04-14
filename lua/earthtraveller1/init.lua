@@ -3,6 +3,7 @@ require("earthtraveller1.keymaps")
 
 require("earthtraveller1.plugins.leap")
 require("earthtraveller1.plugins.presence")
+require("earthtraveller1.plugins.debugger")
 require("earthtraveller1.plugins.lsp")
 require("earthtraveller1.plugins.colorscheme")
 require("earthtraveller1.plugins.treesitter")
