@@ -1,16 +1,19 @@
 require("earthtraveller1.plugins")
 require("earthtraveller1.keymaps")
 
-require("earthtraveller1.plugins.barbar")
-require("earthtraveller1.plugins.colorscheme")
-require("earthtraveller1.plugins.harpoon")
 require("earthtraveller1.plugins.leap")
 require("earthtraveller1.plugins.lsp")
-require("earthtraveller1.plugins.lualine")
-require("earthtraveller1.plugins.nvim-tree")
 require("earthtraveller1.plugins.presence")
-require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.treesitter")
+
+if not vim.g.vscode then
+    require("earthtraveller1.plugins.barbar")
+    require("earthtraveller1.plugins.colorscheme")
+    require("earthtraveller1.plugins.lualine")
+    require("earthtraveller1.plugins.telescope")
+    require("earthtraveller1.plugins.nvim-tree")
+    require("earthtraveller1.plugins.harpoon")
+end
 
 -- Place where all my settings go
 
