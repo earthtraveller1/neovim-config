@@ -26,6 +26,7 @@ local function plugins(use)
             'nvim-treesitter/nvim-treesitter', name = 'nvim-treesitter',
             run = ":TSUpdate", tag = "v0.8.5.2"
         }
+        use 'nvim-treesitter/nvim-treesitter-context'
 
         -- Discord Rich Presence plugin.
         use 'andweeb/presence.nvim'
@@ -77,7 +78,7 @@ local function plugins(use)
         use 'ggandor/leap.nvim'
 
         -- Debugger.
-        use 'mfussenegger/nvim-dap' 
+        use 'mfussenegger/nvim-dap'
         use 'rcarriga/nvim-dap-ui'
 end
 
