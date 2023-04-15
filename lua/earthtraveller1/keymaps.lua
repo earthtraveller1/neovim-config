@@ -5,9 +5,10 @@
 vim.g.mapleader = " "
 
 -- General purpose remaps.
-vim.keymap.set("n", "<leader>pv", function() vim.cmd("Ex") end)
 vim.keymap.set({ "n", "i" }, "<C-u>", "<C-u>zz") -- These two are for moving.
 vim.keymap.set({ "n", "i" }, "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
 
 vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y")
 vim.keymap.set({ "n", "v" }, "<leader>p", "\"+p")
