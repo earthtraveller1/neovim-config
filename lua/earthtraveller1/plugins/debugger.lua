@@ -6,7 +6,7 @@ dap.adapters.lldb = {
         if jit.os == "Windows" then
             return "C:/Program Files/LLVM/bin/lldb-vscode.exe"
         else
-            return "/usr/bin/lldb-vscode"
+            return "/usr/bin/lldb-vscode-14"
         end
     end)(),
     name = 'lldb',
