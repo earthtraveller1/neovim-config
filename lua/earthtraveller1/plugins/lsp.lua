@@ -22,8 +22,8 @@ lsp.configure('pylsp', {
             plugins = {
                 jedi = {
                     extra_paths = {
-                        "C:/Users/Yue/AppData/Local/Programs/Python/Python311/Lib/site-packages",
-                        "/home/yue/.local/lib/python3.10/site-packages"
+                        os.getenv("HOME") .. "/AppData/Local/Programs/Python/Python311/Lib/site-packages",
+                        os.getenv("HOME") .. "/.local/lib/python3.10/site-packages"
                     }
                 },
                 pycodestyle = {
