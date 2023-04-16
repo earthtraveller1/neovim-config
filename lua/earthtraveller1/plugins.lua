@@ -13,4 +13,14 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({})
+require("lazy").setup({
+    {
+        "nvim-treesitter/nvim-treesitter",
+        build = function()
+            require("nvim-treesitter.install").update({ with_sync = true })
+        end
+    },
+    { "catppuccin/nvim", name = "catppuccin" }
+})
+
+require("earthtraveller1.plugins.treesitter")
