@@ -20,7 +20,29 @@ require("lazy").setup({
             require("nvim-treesitter.install").update({ with_sync = true })
         end
     },
-    { "catppuccin/nvim", name = "catppuccin" }
+    { "catppuccin/nvim", name = "catppuccin" },
+    {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v2.x',
+        dependencies = {
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},             -- Required
+            {'williamboman/mason.nvim', build = vim.cmd.MasonUpdate },
+            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},     -- Required
+            {'hrsh7th/cmp-nvim-lsp'}, -- Required
+            {'L3MON4D3/LuaSnip'},     -- Required
+        }
+    },
+    {
+        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    }
 })
 
 require("earthtraveller1.plugins.treesitter")
+require("earthtraveller1.plugins.lsp")
+require("earthtraveller1.plugins.telescope")
+
