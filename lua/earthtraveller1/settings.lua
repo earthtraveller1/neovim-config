@@ -10,4 +10,5 @@ vim.opt.expandtab = true
 vim.opt.wrap = false
 
 vim.cmd.colorscheme "catppuccin"
+vim.cmd.TSEnable "highlight"
 
