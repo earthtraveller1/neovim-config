@@ -217,7 +217,9 @@ require("lazy").setup({
             require("leap").add_default_mappings()
         end
     },
-    'nvim-treesitter/playground'
+    'nvim-treesitter/playground',
+    'mfussenegger/nvim-dap',
+    'rcarriga/nvim-dap-ui'
 })
 
 require("earthtraveller1.plugins.lsp")
