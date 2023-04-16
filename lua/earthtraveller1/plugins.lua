@@ -292,3 +292,5 @@ require("earthtraveller1.plugins.lsp")
 require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.barbar")
 require("earthtraveller1.plugins.nvim-tree")
+require("earthtraveller1.plugins.debugger")
+
