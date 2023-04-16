@@ -11,7 +11,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>qq", "<Cmd>wqa<CR>")
 
 -- Opening fugitive in a better way.
-vim.keymap.set("n", "<leader>gi", "<Cmd>Git<CR><C-w>L<C-w>60<")
+vim.keymap.set("n", "<leader>gi", "<Cmd>Git<CR><C-w>L")
 
 -- Opening the symbol outline.
 vim.keymap.set("n", "<leader>so", "<Cmd>SymbolsOutline<CR>")
