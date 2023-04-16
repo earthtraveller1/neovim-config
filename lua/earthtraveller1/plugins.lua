@@ -44,7 +44,7 @@ require("lazy").setup({
             },
         }
     },
-    { "catppuccin/nvim", name = "catppuccin" },
+    { "catppuccin/nvim",   name = "catppuccin" },
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -76,7 +76,7 @@ require("lazy").setup({
                 component_separators = { left = '', right = '' },
                 section_separators = { left = '', right = '' },
                 disabled_filetypes = {
-                    statusline = {"NvimTree", "fugitive"},
+                    statusline = { "NvimTree", "fugitive" },
                     winbar = {},
                 },
                 ignore_focus = {},
@@ -210,6 +210,13 @@ require("lazy").setup({
         },
     },
     'nvim-tree/nvim-tree.lua',
+    {
+        'ggandor/leap.nvim',
+        requirements = { 'tpope/vim-repeat' },
+        init = function()
+            require("leap").add_default_mappings()
+        end
+    },
 })
 
 require("earthtraveller1.plugins.lsp")
