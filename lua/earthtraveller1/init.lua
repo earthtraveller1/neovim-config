@@ -1,1 +1,1 @@
-require("plugins")
+require("earthtraveller1.plugins")
