@@ -44,7 +44,7 @@ require("lazy").setup({
             },
         }
     },
-    { "catppuccin/nvim",   name = "catppuccin" },
+    { "catppuccin/nvim", name = "catppuccin" },
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -58,6 +58,7 @@ require("lazy").setup({
             { 'hrsh7th/nvim-cmp' },     -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
             { 'L3MON4D3/LuaSnip' },     -- Required
+            { 'ray-x/lsp_signature.nvim' },
         }
     },
     {
@@ -238,8 +239,9 @@ require("lazy").setup({
             auto_unfold_hover = true,
             fold_markers = { '', '' },
             wrap = false,
-            keymaps = { -- These keymaps can be a string or a table for multiple keys
-                close = {"<Esc>", "q"},
+            keymaps = {
+                        -- These keymaps can be a string or a table for multiple keys
+                close = { "<Esc>", "q" },
                 goto_location = "<Cr>",
                 focus_location = "o",
                 hover_symbol = "<C-space>",
@@ -293,4 +295,3 @@ require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.barbar")
 require("earthtraveller1.plugins.nvim-tree")
 require("earthtraveller1.plugins.debugger")
-
