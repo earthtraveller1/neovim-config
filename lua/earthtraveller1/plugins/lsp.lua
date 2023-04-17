@@ -4,6 +4,13 @@ lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 end)
 
+lsp.ensure_installed({
+    'lua_ls',
+    'clangd',
+    'rust_analyzer',
+    'pylsp'
+})
+
 lsp.set_sign_icons({
   error = '✘',
   warn = '▲',
