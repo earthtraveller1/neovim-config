@@ -4,6 +4,10 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- Useful when line wrapping is enabled.
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
+
 -- ThePrimeagen's greatest remap ever.
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
