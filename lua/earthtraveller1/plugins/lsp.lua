@@ -22,6 +22,15 @@ local lspconfig = require('lspconfig')
 
 lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
 lspconfig.rust_analyzer.setup {}
+lspconfig.clangd.setup {
+    settings = {
+        clangd = {
+            arguments = {
+                "--clang-tidy"
+            }
+        }
+    }
+}
 
 require "lsp_signature".setup({
     bind = true, -- This is mandatory, otherwise border config won't get registered.
