@@ -3,7 +3,7 @@
   "barbar.nvim": { "branch": "master", "commit": "8edf23fe94a2486a8bc74cb64efb9211810f7e83" },
   "catppuccin": { "branch": "main", "commit": "fa9a4465672fa81c06b23634c0f04f6a5d622211" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef" },
-  "lazy.nvim": { "branch": "main", "commit": "5c89dc52f42e5058a46b0912d7d9042f564e44e0" },
+  "lazy.nvim": { "branch": "main", "commit": "a55ab6062520a9ea13e90e90bf3e3ef3843c5b0f" },
   "leap.nvim": { "branch": "main", "commit": "98a72ad93c629c49bd7127d342960cc1b159b620" },
   "lsp-zero.nvim": { "branch": "v2.x", "commit": "eb9e20ca147a31c03fd8a84e1aa2480d6100ad8a" },
   "lsp_signature.nvim": { "branch": "master", "commit": "72b0d4ece23338fe2d03fc7b6fd8c8bace6bb441" },
