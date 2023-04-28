@@ -3,7 +3,7 @@
   "barbar.nvim": { "branch": "master", "commit": "8edf23fe94a2486a8bc74cb64efb9211810f7e83" },
   "catppuccin": { "branch": "main", "commit": "fa9a4465672fa81c06b23634c0f04f6a5d622211" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef" },
-  "lazy.nvim": { "branch": "main", "commit": "a55ab6062520a9ea13e90e90bf3e3ef3843c5b0f" },
+  "lazy.nvim": { "branch": "main", "commit": "eddee830ede0f95ced9802ca9abd3f8f662e5cc5" },
   "leap.nvim": { "branch": "main", "commit": "98a72ad93c629c49bd7127d342960cc1b159b620" },
   "lsp-zero.nvim": { "branch": "v2.x", "commit": "eb9e20ca147a31c03fd8a84e1aa2480d6100ad8a" },
   "lsp_signature.nvim": { "branch": "master", "commit": "72b0d4ece23338fe2d03fc7b6fd8c8bace6bb441" },
@@ -21,5 +21,6 @@
   "plenary.nvim": { "branch": "master", "commit": "9ac3e9541bbabd9d73663d757e4fe48a675bb054" },
   "symbols-outline.nvim": { "branch": "master", "commit": "512791925d57a61c545bc303356e8a8f7869763c" },
   "telescope.nvim": { "branch": "master", "commit": "c1a2af0af69e80e14e6b226d3957a064cd080805" },
-  "vim-fugitive": { "branch": "master", "commit": "e6651a79facf5cc2b7c554fdc19eb8a9fe89602c" }
+  "vim-fugitive": { "branch": "master", "commit": "e6651a79facf5cc2b7c554fdc19eb8a9fe89602c" },
+  "vim-repeat": { "branch": "master", "commit": "24afe922e6a05891756ecf331f39a1f6743d3d5a" }
 }

@@ -213,7 +213,7 @@ require("lazy").setup({
     'nvim-tree/nvim-tree.lua',
     {
         'ggandor/leap.nvim',
-        requirements = { 'tpope/vim-repeat' },
+        dependencies = { 'tpope/vim-repeat' },
         init = function()
             require("leap").add_default_mappings()
         end
