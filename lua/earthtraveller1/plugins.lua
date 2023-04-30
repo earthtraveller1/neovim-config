@@ -333,7 +333,8 @@ require("lazy").setup({
                 Fragment = { icon = "", hl = "@constant" },
             },
         }
-    }
+    },
+    "ThePrimeagen/vim-be-good"
 })
 
 require("earthtraveller1.plugins.lsp")
