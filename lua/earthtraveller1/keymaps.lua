@@ -13,7 +13,7 @@ vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
 
 -- ThePrimeagen's greatest remap ever.
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>pp", [["_dP]])
 
 -- Easier time exiting NeoVim.
 vim.keymap.set("n", "<leader>qq", "<Cmd>wqa<CR>")
