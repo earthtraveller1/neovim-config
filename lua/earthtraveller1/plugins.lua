@@ -20,7 +20,7 @@ require("lazy").setup({
             require("nvim-treesitter.install").update({ with_sync = true })
         end,
     },
-    { "catppuccin/nvim", name = "catppuccin" },
+
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -37,16 +37,15 @@ require("lazy").setup({
             { 'ray-x/lsp_signature.nvim' },
         }
     },
-    {
-        'nvim-telescope/telescope.nvim',
-        tag = '0.1.1',
-        dependencies = { 'nvim-lua/plenary.nvim' },
-    },
-    'tpope/vim-fugitive',
+
+    { "catppuccin/nvim", name = "catppuccin" },
+    { 'nvim-telescope/telescope.nvim', tag = '0.1.1', dependencies = { 'nvim-lua/plenary.nvim' } },
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'romgrk/barbar.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
-    'nvim-tree/nvim-tree.lua',
     { 'ggandor/leap.nvim', dependencies = { 'tpope/vim-repeat' } },
+
+    'nvim-tree/nvim-tree.lua',
+    'tpope/vim-fugitive',
     'nvim-treesitter/playground',
     'mfussenegger/nvim-dap',
     'rcarriga/nvim-dap-ui',
