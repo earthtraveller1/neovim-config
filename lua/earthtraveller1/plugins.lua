@@ -89,50 +89,7 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' },
     },
     'tpope/vim-fugitive',
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
-        opts = {
-            options = {
-                icons_enabled = true,
-                theme = 'auto',
-                component_separators = { left = '', right = '' },
-                section_separators = { left = '', right = '' },
-                disabled_filetypes = {
-                    statusline = { "NvimTree", "fugitive" },
-                    winbar = {},
-                },
-                ignore_focus = {},
-                always_divide_middle = true,
-                globalstatus = false,
-                refresh = {
-                    statusline = 1000,
-                    tabline = 1000,
-                    winbar = 1000,
-                }
-            },
-            sections = {
-                lualine_a = { 'mode' },
-                lualine_b = { 'branch', 'diff', 'diagnostics' },
-                lualine_c = { 'filename' },
-                lualine_x = { 'encoding', 'fileformat', 'filetype' },
-                lualine_y = { 'progress' },
-                lualine_z = { 'location' }
-            },
-            inactive_sections = {
-                lualine_a = {},
-                lualine_b = {},
-                lualine_c = { 'filename' },
-                lualine_x = { 'location' },
-                lualine_y = {},
-                lualine_z = {}
-            },
-            tabline = {},
-            winbar = {},
-            inactive_winbar = {},
-            extensions = {}
-        }
-    },
+    { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     {
         'romgrk/barbar.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -233,13 +190,7 @@ require("lazy").setup({
         },
     },
     'nvim-tree/nvim-tree.lua',
-    {
-        'ggandor/leap.nvim',
-        dependencies = { 'tpope/vim-repeat' },
-        init = function()
-            require("leap").add_default_mappings()
-        end
-    },
+    { 'ggandor/leap.nvim', dependencies = { 'tpope/vim-repeat' } },
     'nvim-treesitter/playground',
     'mfussenegger/nvim-dap',
     'rcarriga/nvim-dap-ui',
@@ -251,8 +202,10 @@ require("lazy").setup({
 require("earthtraveller1.plugins.barbar")
 require("earthtraveller1.plugins.debugger")
 require("earthtraveller1.plugins.lsp")
+require("earthtraveller1.plugins.lualine")
 require("earthtraveller1.plugins.nvim-tree")
 require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.treesitter")
 require("earthtraveller1.plugins.trouble")
 
+require("leap").add_default_mappings()
