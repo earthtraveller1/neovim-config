@@ -248,11 +248,11 @@ require("lazy").setup({
     "folke/trouble.nvim",
 })
 
-require("earthtraveller1.plugins.lsp")
-require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.barbar")
-require("earthtraveller1.plugins.nvim-tree")
 require("earthtraveller1.plugins.debugger")
-require("earthtraveller1.plugins.trouble")
+require("earthtraveller1.plugins.lsp")
+require("earthtraveller1.plugins.nvim-tree")
+require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.treesitter")
+require("earthtraveller1.plugins.trouble")
 
