@@ -52,6 +52,7 @@ require("lazy").setup({
     'simrat39/symbols-outline.nvim',
     "ThePrimeagen/vim-be-good",
     "folke/trouble.nvim",
+    "andweeb/presence.nvim",
 })
 
 require("earthtraveller1.plugins.barbar")
@@ -63,5 +64,6 @@ require("earthtraveller1.plugins.nvim-tree")
 require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.treesitter")
 require("earthtraveller1.plugins.trouble")
+require("earthtraveller1.plugins.presence")
 
 require("leap").add_default_mappings()
