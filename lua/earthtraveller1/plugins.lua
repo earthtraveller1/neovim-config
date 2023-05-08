@@ -53,6 +53,7 @@ require("lazy").setup({
     "ThePrimeagen/vim-be-good",
     "folke/trouble.nvim",
     "andweeb/presence.nvim",
+    "m4xshen/autoclose.nvim",
 })
 
 require("earthtraveller1.plugins.barbar")
@@ -67,3 +68,4 @@ require("earthtraveller1.plugins.trouble")
 require("earthtraveller1.plugins.presence")
 
 require("leap").add_default_mappings()
+require("autoclose").setup()
