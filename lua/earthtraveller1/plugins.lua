@@ -69,3 +69,4 @@ require("earthtraveller1.plugins.presence")
 
 require("leap").add_default_mappings()
 require("autoclose").setup()
+require("symbols-outline").setup()
