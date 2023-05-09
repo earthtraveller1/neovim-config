@@ -9,6 +9,7 @@ vim.opt.expandtab = true
 
 vim.opt.wrap = false
 
-vim.cmd.colorscheme "catppuccin"
-vim.cmd.TSEnable "highlight"
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
+vim.opt.termguicolors = true
