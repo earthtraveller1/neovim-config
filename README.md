@@ -1,3 +1,3 @@
-# NeoVim Configurations
+# Neng's NeoVim Configuration
 
-My Personal NeoVim configuration. Feel free to steal this and use it for yourself if you would like.
+A NeoVim configuration, written specifically for Neng.

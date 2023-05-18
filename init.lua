@@ -1,2 +1,1 @@
-require("earthtraveller1")
-
+print "Hello, World!"
