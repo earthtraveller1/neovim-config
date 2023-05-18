@@ -69,7 +69,8 @@ require("lazy").setup({
     },
 
     { "nvim-tree/nvim-tree.lua",   opts = {} },
-    { "nvim-lualine/lualine.nvim", opts = { options = { disabled_filetypes = { status_line = { "NvimTree" } } } } }
+    { "nvim-lualine/lualine.nvim", opts = { options = { disabled_filetypes = { status_line = { "NvimTree" } } } } },
+    { "m4xshen/autoclose.nvim",    opts = { options = { disabled_filetypes = { "text", "markdown" } } } }
 })
 
 require("nvim-treesitter.configs").setup({
