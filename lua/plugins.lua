@@ -50,33 +50,6 @@ require("lazy").setup({
     },
 
     {
-        "rebelot/kanagawa.nvim",
-        config = function(_, opts)
-            require("kanagawa").setup(opts)
-            vim.cmd.colorscheme("kanagawa-dragon")
-        end,
-        opts = {
-            transparent = true,
-            overrides = function(_)
-                return {
-                    NormalFloat = { bg = "none" },
-                    FloatBorder = { bg = "none" },
-                    FloatTitle = { bg = "none" },
-                }
-            end,
-            colors = {
-                theme = {
-                    all = {
-                        ui = {
-                            bg_gutter = "none"
-                        }
-                    }
-                }
-            }
-        }
-    },
-
-    {
         "nvim-tree/nvim-tree.lua",
         opts = {},
         config = function(_, opts)
