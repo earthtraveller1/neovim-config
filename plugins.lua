@@ -76,10 +76,17 @@ require("lazy").setup({
         }
     },
 
-    { "nvim-tree/nvim-tree.lua",   opts = {} },
+    {
+        "nvim-tree/nvim-tree.lua",
+        opts = {},
+        config = function(_, opts)
+            require("nvim-tree").setup(opts)
+
+            -- Open up the file tree on open.
+            vim.cmd("NvimTreeOpen")
+        end
+    },
+
     { "nvim-lualine/lualine.nvim", opts = { options = { disabled_filetypes = { status_line = { "NvimTree" } } } } },
     { "m4xshen/autoclose.nvim",    opts = { options = { disabled_filetypes = { "text", "markdown" } } } }
 })
-
--- Open up the file tree on open.
-vim.cmd("NvimTreeOpen")
