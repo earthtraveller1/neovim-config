@@ -32,6 +32,14 @@ require("lazy").setup({
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
+        config = function(_, opts) require("nvim-treesitter.configs").setup(opts) end,
+        opts = {
+            ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python" },
+            auto_install = true,
+            highlight = {
+                enable = true
+            }
+        }
     },
 
     {
@@ -73,14 +81,7 @@ require("lazy").setup({
     { "m4xshen/autoclose.nvim",    opts = { options = { disabled_filetypes = { "text", "markdown" } } } }
 })
 
-require("nvim-treesitter.configs").setup({
-    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python" },
-    auto_install = true,
-    highlight = {
-        enable = true
-    }
-})
-
+-- BarBar Keybindings
 
 -- Move to previous/next
 vim.api.nvim_set_keymap('n', '<A-,>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
@@ -119,10 +120,12 @@ vim.api.nvim_set_keymap('n', '<Space>bd', '<Cmd>BufferOrderByDirectory<CR>', { n
 vim.api.nvim_set_keymap('n', '<Space>bl', '<Cmd>BufferOrderByLanguage<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', { noremap = true, silent = true })
 
+-- Telescope keybindings
 local telescope_builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', telescope_builtin.help_tags, {})
 
+-- Open up the file tree on open.
 vim.cmd("NvimTreeOpen")
