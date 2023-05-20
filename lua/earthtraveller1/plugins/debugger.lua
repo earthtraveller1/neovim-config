@@ -39,6 +39,35 @@ dap.configurations.cpp = {
         -- https://www.kernel.org/doc/html/latest/admin-guide/LSM/Yama.html
         -- runInTerminal = false,
     },
+    {
+        name = 'vulkan-scene',
+        type = 'lldb',
+        request = 'launch',
+        program = function()
+            if jit.os == "Windows" then
+                return vim.fn.getcwd() .. "/build/vulkan-scene.exe"
+            else
+                return vim.fn.getcwd() .. "/build/vulkan-scene"
+            end
+        end,
+        cwd = '${workspaceFolder}',
+        stopOnEntry = false,
+        args = {
+            "--enable-validation"
+        },
+        -- 💀
+        -- if you change `runInTerminal` to true, you might need to change the yama/ptrace_scope setting:
+        --
+        --    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+        --
+        -- Otherwise you might get the following error:
+        --
+        --    Error on launch: Failed to attach to the target process
+        --
+        -- But you should be aware of the implications:
+        -- https://www.kernel.org/doc/html/latest/admin-guide/LSM/Yama.html
+        -- runInTerminal = false,
+    },
 }
 
 vim.fn.sign_define('DapBreakpoint', { text = '', texthl = 'DapUIStop', linehl = '', numhl = '' })
