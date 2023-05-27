@@ -42,4 +42,8 @@ require("catppuccin").setup {
     },
 }
 
-vim.cmd.colorscheme "catppuccin"
+require("kanagawa").setup({
+    dimInactive = true
+})
+
+vim.cmd.colorscheme "kanagawa-dragon"
