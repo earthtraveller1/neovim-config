@@ -38,13 +38,19 @@ require("lazy").setup({
         }
     },
 
-    { "catppuccin/nvim", name = "catppuccin" },
-    { 'nvim-telescope/telescope.nvim', tag = '0.1.1', dependencies = { 'nvim-lua/plenary.nvim' } },
+    { "catppuccin/nvim",           name = "catppuccin" },
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.1',
+        dependencies = {
+            'nvim-lua/plenary.nvim' }
+    },
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
-    { 'romgrk/barbar.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
-    { 'ggandor/leap.nvim', dependencies = { 'tpope/vim-repeat' } },
+    { 'romgrk/barbar.nvim',        dependencies = { 'nvim-tree/nvim-web-devicons' } },
+    { 'ggandor/leap.nvim',         dependencies = { 'tpope/vim-repeat' } },
 
     'nvim-tree/nvim-tree.lua',
+    "rebelot/kanagawa.nvim",
     'tpope/vim-fugitive',
     'nvim-treesitter/playground',
     'mfussenegger/nvim-dap',
@@ -57,7 +63,7 @@ require("lazy").setup({
 })
 
 require("earthtraveller1.plugins.barbar")
-require("earthtraveller1.plugins.catppuccin")
+require("earthtraveller1.plugins.colorscheme")
 require("earthtraveller1.plugins.debugger")
 require("earthtraveller1.plugins.lsp")
 require("earthtraveller1.plugins.lualine")
