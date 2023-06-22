@@ -5,5 +5,5 @@ require('tabnine').setup({
     debounce_ms = 800,
     suggestion_color = { gui = "#808080", cterm = 244 },
     exclude_filetypes = { "TelescopePrompt" },
-    log_file_path = nil, -- absolute path to Tabnine log file
+    log_file_path = "C:\\Users\\Yue\\tabnine.log", -- absolute path to Tabnine log file
 })

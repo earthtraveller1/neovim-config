@@ -5,7 +5,7 @@ require('lualine').setup {
         component_separators = { left = '', right = '' },
         section_separators = { left = '', right = '' },
         disabled_filetypes = {
-            statusline = {"NvimTree"},
+            statusline = { "NvimTree" },
             winbar = {},
         },
         ignore_focus = {},
@@ -20,8 +20,8 @@ require('lualine').setup {
     sections = {
         lualine_a = { 'mode' },
         lualine_b = { 'branch', 'diff', 'diagnostics' },
-        lualine_c = { 'filename' },
-        lualine_x = { 'encoding', 'fileformat', 'filetype' },
+        lualine_c = { 'filename', 'lsp_progress' },
+        lualine_x = { 'encoding', 'fileformat', 'filetype', 'tabnine' },
         lualine_y = { 'progress' },
         lualine_z = { 'location' }
     },
