@@ -82,6 +82,7 @@ require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.treesitter")
 require("earthtraveller1.plugins.trouble")
 require("earthtraveller1.plugins.presence")
+require("earthtraveller1.plugins.tabnine")
 
 require("leap").add_default_mappings()
 require("autoclose").setup()
