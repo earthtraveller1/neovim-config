@@ -61,7 +61,6 @@ require("lazy").setup({
     'nvim-tree/nvim-tree.lua',
     "rebelot/kanagawa.nvim",
     'tpope/vim-fugitive',
-    'nvim-treesitter/playground',
     'mfussenegger/nvim-dap',
     'rcarriga/nvim-dap-ui',
     'simrat39/symbols-outline.nvim',
