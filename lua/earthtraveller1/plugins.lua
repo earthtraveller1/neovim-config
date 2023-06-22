@@ -13,6 +13,14 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+local function tabnine_build_path()
+    if vim.loop.os_uname().sysname == "Windows_NT" then
+        return "pwsh.exe -file .\\dl_binaries.ps1"
+    else
+        return "./dl_binaries.sh"
+    end
+end
+
 require("lazy").setup({
     {
         "nvim-treesitter/nvim-treesitter",
@@ -49,6 +57,7 @@ require("lazy").setup({
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'romgrk/barbar.nvim',        dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'ggandor/leap.nvim',         dependencies = { 'tpope/vim-repeat' } },
+    { 'codota/tabnine-nvim',       build = tabnine_build_path() },
 
     'nvim-tree/nvim-tree.lua',
     "rebelot/kanagawa.nvim",
