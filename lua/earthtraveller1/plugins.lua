@@ -57,7 +57,6 @@ require("lazy").setup({
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'romgrk/barbar.nvim',        dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'ggandor/leap.nvim',         dependencies = { 'tpope/vim-repeat' } },
-    { 'andweeb/presence.nvim',     config = true },
 
     'nvim-tree/nvim-tree.lua',
     "rebelot/kanagawa.nvim",
@@ -80,7 +79,6 @@ require("earthtraveller1.plugins.nvim-tree")
 require("earthtraveller1.plugins.telescope")
 require("earthtraveller1.plugins.treesitter")
 require("earthtraveller1.plugins.trouble")
-require("earthtraveller1.plugins.presence")
 
 require("leap").add_default_mappings()
 require("autoclose").setup()
