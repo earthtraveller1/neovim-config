@@ -54,6 +54,7 @@ require("lazy").setup({
     },
 
     { "catppuccin/nvim",           name = "catppuccin" },
+    { "j-hui/fidget.nvim",         tag = "legacy",                                  opts = {} },
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'romgrk/barbar.nvim',        dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'ggandor/leap.nvim',         dependencies = { 'tpope/vim-repeat' } },
