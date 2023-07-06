@@ -58,7 +58,7 @@ require("lazy").setup({
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'romgrk/barbar.nvim',        dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'ggandor/leap.nvim',         dependencies = { 'tpope/vim-repeat' } },
-    { "m4xshen/hardtime.nvim",     event = "VeryLazy",                              opts = {} },
+
     'nvim-tree/nvim-tree.lua',
     "rebelot/kanagawa.nvim",
     'tpope/vim-fugitive',
