@@ -80,6 +80,7 @@ require("lazy").setup({
     "folke/trouble.nvim",
     "andweeb/presence.nvim",
     "m4xshen/autoclose.nvim",
+    "mbbill/undotree",
 })
 
 require("earthtraveller1.plugins.barbar")
