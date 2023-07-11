@@ -23,3 +23,6 @@ vim.keymap.set("n", "<leader>gi", "<Cmd>Git<CR><C-w>L")
 
 -- Opening the symbol outline.
 vim.keymap.set("n", "<leader>so", "<Cmd>SymbolsOutline<CR>")
+
+-- Opening Undotree
+vim.keymap.set("n", "<leader>ut", vim.cmd.UndotreeToggle)
