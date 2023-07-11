@@ -20,3 +20,5 @@ vim.filetype.add({
         frag = "glsl"
     }
 })
+
+vim.opt.cursorline = true
