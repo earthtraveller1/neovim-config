@@ -9,7 +9,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- For getting rid of highlights from searching
-vim.keymap.set("n", "<leader>dh", vim.cmd.noh)
+vim.keymap.set("n", "<leader>hh", vim.cmd.noh)
 
 -- Useful when line wrapping is enabled.
 vim.keymap.set("n", "j", "gj")
