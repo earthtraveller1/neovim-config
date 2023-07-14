@@ -87,6 +87,7 @@ require("lazy").setup({
 require("earthtraveller1.plugins.barbar")
 require("earthtraveller1.plugins.colorscheme")
 require("earthtraveller1.plugins.debugger")
+require("earthtraveller1.plugins.git-worktrees")
 require("earthtraveller1.plugins.lsp")
 require("earthtraveller1.plugins.lualine")
 require("earthtraveller1.plugins.nvim-tree")
