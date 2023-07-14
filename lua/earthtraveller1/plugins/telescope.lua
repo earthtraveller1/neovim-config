@@ -29,6 +29,8 @@ require('telescope').setup {
     }
 }
 
+require('telescope').load_extension("git_worktree")
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', function() builtin.find_files({ hidden = true }) end, {})
 vim.keymap.set('n', '<leader>ft', function() builtin.treesitter({ hidden = true }) end, {})

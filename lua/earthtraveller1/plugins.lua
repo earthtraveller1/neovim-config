@@ -81,6 +81,7 @@ require("lazy").setup({
     "andweeb/presence.nvim",
     "m4xshen/autoclose.nvim",
     "mbbill/undotree",
+    { 'ThePrimeagen/git-worktree.nvim', opts = {} },
 })
 
 require("earthtraveller1.plugins.barbar")
