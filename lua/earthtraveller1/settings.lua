@@ -21,4 +21,6 @@ vim.filetype.add({
     }
 })
 
+vim.opt.guicursor = ""
+
 vim.opt.cursorline = true
