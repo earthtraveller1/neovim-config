@@ -1,3 +1,3 @@
-# NeoVim Configurations
+# nvim-config
 
-My Personal NeoVim configuration. Feel free to steal this and use it for yourself if you would like.
+a neovim config
