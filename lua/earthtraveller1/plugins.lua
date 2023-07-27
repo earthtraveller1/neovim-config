@@ -20,4 +20,5 @@ require("lazy").setup({
     require("earthtraveller1.plugins.fugitive"),
     require("earthtraveller1.plugins.undotree"),
     require("earthtraveller1.plugins.autoclose"),
+    require("earthtraveller1.plugins.git-worktree"),
 })
