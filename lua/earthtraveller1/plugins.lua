@@ -18,7 +18,6 @@ require("lazy").setup({
     require("earthtraveller1.plugins.nvim-tree"),
     require("earthtraveller1.plugins.treesitter"),
     require("earthtraveller1.plugins.fugitive"),
-    require("earthtraveller1.plugins.flash"),
     require("earthtraveller1.plugins.undotree"),
     require("earthtraveller1.plugins.autoclose"),
 })
