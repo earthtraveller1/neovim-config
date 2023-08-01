@@ -22,6 +22,4 @@ require("lazy").setup({
     require("earthtraveller1.plugins.autoclose"),
     require("earthtraveller1.plugins.git-worktree"),
     require("earthtraveller1.plugins.leap"),
-    require("earthtraveller1.plugins.lsp-zero"),
-    require("earthtraveller1.plugins.lsp-signature"),
 })
