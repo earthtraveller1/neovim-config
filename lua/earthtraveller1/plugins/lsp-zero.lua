@@ -15,7 +15,7 @@ return {
     config = function()
         local lsp = require('lsp-zero').preset({})
 
-        lsp.on_attach(function(client, bufnr)
+        lsp.on_attach(function(_, bufnr)
             -- see :help lsp-zero-keybindings
             -- to learn the available actions
             lsp.default_keymaps({buffer = bufnr})
@@ -25,5 +25,14 @@ return {
         require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
         lsp.setup()
+
+        vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+            vim.lsp.diagnostic.on_publish_diagnostics, {
+                virtual_text = true,
+                signs = true,
+                underline = true,
+                update_in_insert = true,
+            }
+        )
     end,
 }
