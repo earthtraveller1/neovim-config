@@ -16,4 +16,8 @@ return {
 
         -- see below for full list of options 👇
     },
+    config = function(_, opts)
+        require("obsidian").setup(opts)
+        vim.keymap.set("n", "gd", vim.cmd.ObsidianFollowLink)
+    end
 }
