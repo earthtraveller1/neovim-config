@@ -13,7 +13,11 @@ return {
         {'L3MON4D3/LuaSnip'},     -- Required
     },
     config = function()
-        local lsp = require('lsp-zero').preset({})
+        local lsp = require('lsp-zero').preset({
+            manage_nvim_cmp = {
+                set_extra_mappings = true,
+            }
+        })
 
         lsp.on_attach(function(_, bufnr)
             -- see :help lsp-zero-keybindings
