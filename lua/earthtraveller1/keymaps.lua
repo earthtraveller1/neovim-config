@@ -8,5 +8,9 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- Just for me to be cool!
+vim.keymap.set("n", "<leader>rs", "<Cmd>:.!fish<Cr>")
+vim.keymap.set("n", "<leader>rr", "\"pVy@p")
+
 vim.keymap.set("n", "<leader>so", vim.cmd.SymbolsOutline)
 vim.keymap.set("n", "<leader>gi", "<Cmd>Git<Cr><C-w>L50<C-w><")
