@@ -4,6 +4,7 @@ return {
         require("oil").setup(opts)
 
         vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
+        vim.keymap.set("n", "<leader>pv", require("oil").open, { desc = "Open parent directory" })
     end,
     opts = {},
     -- Optional dependencies
