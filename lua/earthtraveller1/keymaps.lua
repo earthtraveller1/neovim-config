@@ -12,4 +12,4 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>rs", "<Cmd>:.!fish<Cr>")
 
 vim.keymap.set("n", "<leader>so", vim.cmd.SymbolsOutline)
-vim.keymap.set("n", "<leader>gi", "<Cmd>Git<Cr><C-w>L50<C-w><")
+vim.keymap.set("n", "<leader>gi", "<Cmd>Git<Cr><C-w>L")
