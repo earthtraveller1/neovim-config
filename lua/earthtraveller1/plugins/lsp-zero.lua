@@ -3,14 +3,14 @@ return {
     branch = 'v2.x',
     dependencies = {
         -- LSP Support
-        {'neovim/nvim-lspconfig'},             -- Required
-        {'williamboman/mason.nvim'},           -- Optional
-        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+        { 'neovim/nvim-lspconfig' },             -- Required
+        { 'williamboman/mason.nvim' },           -- Optional
+        { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
         -- Autocompletion
-        {'hrsh7th/nvim-cmp'},     -- Required
-        {'hrsh7th/cmp-nvim-lsp'}, -- Required
-        {'L3MON4D3/LuaSnip'},     -- Required
+        { 'hrsh7th/nvim-cmp' },     -- Required
+        { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+        { 'L3MON4D3/LuaSnip' },     -- Required
     },
     config = function()
         local lsp = require('lsp-zero').preset({
@@ -26,11 +26,11 @@ return {
         lsp.on_attach(function(_, bufnr)
             -- see :help lsp-zero-keybindings
             -- to learn the available actions
-            lsp.default_keymaps({buffer = bufnr})
+            lsp.default_keymaps({ buffer = bufnr })
             lsp.buffer_autoformat()
         end)
 
-        lsp.setup_servers({'clangd', 'ocamllsp'})
+        lsp.setup_servers({ 'clangd', 'ocamllsp', 'rust_analyzer' })
 
         -- (Optional) Configure lua language server for neovim
         require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
