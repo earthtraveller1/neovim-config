@@ -10,3 +10,4 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>rs", "<Cmd>:.!fish<Cr>")
 
 vim.keymap.set("n", "<leader>gi", "<Cmd>Git<Cr><C-w>L")
+vim.keymap.set("n", "<leader>du", vim.cmd.UndotreeToggle)
