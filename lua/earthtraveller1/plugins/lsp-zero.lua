@@ -30,7 +30,7 @@ return {
             lsp.buffer_autoformat()
         end)
 
-        lsp.setup_servers({ 'clangd', 'ocamllsp', 'rust_analyzer' })
+        lsp.setup_servers({ 'clangd', 'ocamllsp', 'rust_analyzer', 'pylsp' })
 
         -- (Optional) Configure lua language server for neovim
         require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
