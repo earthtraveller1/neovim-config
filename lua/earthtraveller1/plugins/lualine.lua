@@ -18,10 +18,5 @@ return {
         disabled_filetypes = {
             statusline = { "NvimTree" }
         },
-        sections = {
-            lualine_c = {
-                "require('lsp-progress').progress()"
-            }
-        }
     }
 }

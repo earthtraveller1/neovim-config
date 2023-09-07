@@ -17,7 +17,6 @@ require("lazy").setup({
     require("earthtraveller1.plugins.fugitive"),
     require("earthtraveller1.plugins.git-worktree"),
     require("earthtraveller1.plugins.leap"),
-    require("earthtraveller1.plugins.lsp-progress"),
     require("earthtraveller1.plugins.lsp-signature"),
     require("earthtraveller1.plugins.lsp-zero"),
     require("earthtraveller1.plugins.lualine"),
