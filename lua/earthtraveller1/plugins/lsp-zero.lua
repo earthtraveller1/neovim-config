@@ -31,7 +31,7 @@ return {
         end)
 
         lsp.setup_servers({
-            'clangd', 'ocamllsp', 'rust_analyzer', 'pylsp', 'gopls'
+            'clangd', 'ocamllsp', 'rust_analyzer', 'pylsp', 'gopls', 'zls'
         })
 
         -- (Optional) Configure lua language server for neovim
