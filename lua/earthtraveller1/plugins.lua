@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     require("earthtraveller1.plugins.autoclose"),
     require("earthtraveller1.plugins.colorscheme"),
+    require("earthtraveller1.plugins.fidget"),
     require("earthtraveller1.plugins.fugitive"),
     require("earthtraveller1.plugins.git-worktree"),
     require("earthtraveller1.plugins.leap"),
