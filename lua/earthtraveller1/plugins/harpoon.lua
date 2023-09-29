@@ -9,9 +9,9 @@ return {
         vim.keymap.set("n", "<A-n>", ui.nav_next)
         vim.keymap.set("n", "<A-p>", ui.nav_prev)
 
-        vim.keymap.set("n", "<A-a>", function() ui.nav_file(1) end)
-        vim.keymap.set("n", "<A-s>", function() ui.nav_file(2) end)
-        vim.keymap.set("n", "<A-d>", function() ui.nav_file(3) end)
-        vim.keymap.set("n", "<A-f>", function() ui.nav_file(4) end)
+        vim.keymap.set("n", "<A-d>", function() ui.nav_file(1) end)
+        vim.keymap.set("n", "<A-f>", function() ui.nav_file(2) end)
+        vim.keymap.set("n", "<A-j>", function() ui.nav_file(3) end)
+        vim.keymap.set("n", "<A-k>", function() ui.nav_file(4) end)
     end
 }
