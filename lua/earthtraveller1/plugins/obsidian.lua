@@ -12,7 +12,7 @@ return {
         -- see below for full list of optional dependencies 👇
     },
     opts = {
-        dir = valt_path,  -- no need to call 'vim.fn.expand' here
+        dir = vault_path, -- no need to call 'vim.fn.expand' here
 
         -- see below for full list of options 👇
     },
