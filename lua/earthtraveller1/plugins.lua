@@ -24,6 +24,7 @@ require("lazy").setup({
     require("earthtraveller1.plugins.nvim-surround"),
     require("earthtraveller1.plugins.obsidian"),
     require("earthtraveller1.plugins.oil"),
+    require("earthtraveller1.plugins.presence"),
     require("earthtraveller1.plugins.telescope"),
     require("earthtraveller1.plugins.treesitter"),
     require("earthtraveller1.plugins.undotree"),
