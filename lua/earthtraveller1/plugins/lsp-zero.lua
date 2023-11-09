@@ -34,8 +34,10 @@ return {
             'gopls',
             'ocamllsp',
             'pylsp',
+            'pyright',
             'rust_analyzer',
             'sourcekit',
+            'tsserver',
             'zls',
         })
 
