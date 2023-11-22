@@ -32,12 +32,9 @@ return {
         lsp.setup_servers({
             'clangd',
             'gopls',
-            'ocamllsp',
             'pylsp',
-            'pyright',
             'rust_analyzer',
             'sourcekit',
-            'tsserver',
             'zls',
         })
 
