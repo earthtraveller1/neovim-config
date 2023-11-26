@@ -34,7 +34,7 @@ return {
             'gopls',
             'pylsp',
             'rust_analyzer',
-            'sourcekit',
+            -- 'sourcekit',
             'zls',
         })
 
