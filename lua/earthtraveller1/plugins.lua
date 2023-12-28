@@ -29,4 +29,5 @@ require("lazy").setup({
     require("earthtraveller1.plugins.telescope"),
     require("earthtraveller1.plugins.treesitter"),
     require("earthtraveller1.plugins.undotree"),
+    require("earthtraveller1.plugins.vim-be-good"),
 })
