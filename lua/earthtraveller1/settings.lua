@@ -13,6 +13,8 @@ vim.opt.scrolloff = 14
 vim.opt.wrap = false
 vim.opt.cursorline = true
 
+vim.opt.colorcolumn = "80"
+
 vim.api.nvim_create_autocmd({ "BufRead" }, {
     pattern = { "*.md", "*.txt" },
     callback = function() vim.opt_local.wrap = true end
