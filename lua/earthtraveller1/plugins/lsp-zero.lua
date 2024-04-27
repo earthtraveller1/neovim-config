@@ -27,6 +27,7 @@ return {
             -- see :help lsp-zero-keybindings
             -- to learn the available actions
             lsp.default_keymaps({ buffer = bufnr })
+            vim.keymap.set('n', "<leader>fo", function() vim.lsp.buf.format() end)
         end)
 
         lsp.setup_servers({
