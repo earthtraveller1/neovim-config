@@ -11,3 +11,6 @@ vim.keymap.set("n", "<leader>rs", "<Cmd>:.!fish<Cr>")
 
 vim.keymap.set("n", "<leader>gi", "<Cmd>Git<Cr><C-w>L")
 vim.keymap.set("n", "<leader>du", vim.cmd.UndotreeToggle)
+
+vim.keymap.set("n", "<A-l>", vim.cmd.tabn)
+vim.keymap.set("n", "<A-h>", vim.cmd.tabp)

@@ -28,6 +28,8 @@ return {
             -- to learn the available actions
             lsp.default_keymaps({ buffer = bufnr })
             vim.keymap.set('n', "<leader>fo", function() vim.lsp.buf.format() end)
+            vim.keymap.set('n', "<leader>la", function() vim.lsp.buf.code_action() end)
+            vim.keymap.set('n', "<leader>rn", vim.lsp.buf.rename)
         end)
 
         lsp.setup_servers({
