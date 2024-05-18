@@ -30,6 +30,8 @@ return {
             vim.keymap.set('n', "<leader>fo", function() vim.lsp.buf.format() end)
             vim.keymap.set('n', "<leader>la", function() vim.lsp.buf.code_action() end)
             vim.keymap.set('n', "<leader>rn", vim.lsp.buf.rename)
+
+            vim.lsp.inlay_hint.enable(true)
         end)
 
         lsp.setup_servers({
