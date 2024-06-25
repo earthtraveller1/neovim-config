@@ -42,6 +42,7 @@ return {
             -- 'sourcekit',
             'jdtls',
             'zls',
+            'hls',
         })
 
         -- (Optional) Configure lua language server for neovim
