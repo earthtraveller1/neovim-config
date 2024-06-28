@@ -43,6 +43,7 @@ return {
             'jdtls',
             'zls',
             'hls',
+            'ols',
         })
 
         -- (Optional) Configure lua language server for neovim
