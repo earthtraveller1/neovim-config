@@ -31,7 +31,10 @@ return {
             vim.keymap.set('n', "<leader>la", function() vim.lsp.buf.code_action() end)
             vim.keymap.set('n', "<leader>rn", vim.lsp.buf.rename)
 
-            vim.lsp.inlay_hint.enable(true)
+            if not vim.g.vscode then
+                vim.lsp.inlay_hint.enable(true)
+                print("Enabling inlay hints!")
+            end
         end)
 
         lsp.setup_servers({
