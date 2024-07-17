@@ -47,6 +47,7 @@ return {
             'zls',
             'hls',
             'ols',
+            'tsserver',
         })
 
         -- (Optional) Configure lua language server for neovim
