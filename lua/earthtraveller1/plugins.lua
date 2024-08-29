@@ -18,6 +18,7 @@ require("lazy").setup({
     require("earthtraveller1.plugins.fidget"),
     require("earthtraveller1.plugins.fugitive"),
     require("earthtraveller1.plugins.harpoon"),
+    require("earthtraveller1.plugins.jdtls"),
     require("earthtraveller1.plugins.leap"),
     require("earthtraveller1.plugins.lsp-signature"),
     require("earthtraveller1.plugins.lsp-zero"),
