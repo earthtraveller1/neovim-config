@@ -43,7 +43,7 @@ return {
             'pylsp',
             'rust_analyzer',
             -- 'sourcekit',
-            'jdtls',
+            -- 'jdtls',
             'zls',
             'hls',
             'ols',
