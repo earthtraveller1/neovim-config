@@ -15,5 +15,9 @@ return {
         vim.keymap.set('i', '<c-x>', function()
             return vim.fn['codeium#Clear']()
         end, { expr = true })
+        
+        if vim.g.vscode then
+            vim.fn.CodeiumDisable()
+        end
     end
 }
