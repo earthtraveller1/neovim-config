@@ -33,7 +33,6 @@ return {
 
             if not vim.g.vscode then
                 vim.lsp.inlay_hint.enable(true)
-                print("Enabling inlay hints!")
             end
         end)
 
@@ -54,14 +53,5 @@ return {
         require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
         lsp.setup()
-
-        vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-            vim.lsp.diagnostic.on_publish_diagnostics, {
-                virtual_text = not vim.g.vscode,
-                signs = true,
-                underline = true,
-                update_in_insert = true,
-            }
-        )
     end,
 }
