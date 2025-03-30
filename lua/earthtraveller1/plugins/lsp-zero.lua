@@ -37,6 +37,14 @@ return {
             end
         end)
 
+        vim.diagnostic.config({
+            virtual_text = true, -- Enables inline virtual text
+            signs = true,   -- Enables signs in the sign column
+            update_in_insert = false, -- Don't update while typing in insert mode
+            underline = true, -- Underlines problematic code
+            severity_sort = true, -- Sort diagnostics by severity
+        })
+
         lsp.setup_servers({
             'clangd',
             'gopls',
@@ -52,16 +60,12 @@ return {
 
         -- (Optional) Configure lua language server for neovim
         require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+        require('lspconfig').rust_analyzer.setup {
+            on_attach = function(_client, _bufnr)
+                require "lsp_signature".on_attach()
+            end
+        }
 
         lsp.setup()
-
-        vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-            vim.lsp.diagnostic.on_publish_diagnostics, {
-                virtual_text = not vim.g.vscode,
-                signs = true,
-                underline = true,
-                update_in_insert = true,
-            }
-        )
     end,
 }
