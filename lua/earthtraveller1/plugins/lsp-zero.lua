@@ -4,8 +4,6 @@ return {
     dependencies = {
         -- LSP Support
         { 'neovim/nvim-lspconfig' },             -- Required
-        { 'williamboman/mason.nvim' },           -- Optional
-        { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
         -- Autocompletion
         { 'hrsh7th/nvim-cmp' },     -- Required
@@ -17,10 +15,6 @@ return {
             manage_nvim_cmp = {
                 set_extra_mappings = true,
             }
-        })
-
-        lsp.ensure_installed({
-            "lua_ls"
         })
 
         lsp.on_attach(function(_, bufnr)
