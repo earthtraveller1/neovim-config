@@ -52,14 +52,6 @@ return {
             'ts_ls',
         })
 
-        -- (Optional) Configure lua language server for neovim
-        require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
-        require('lspconfig').rust_analyzer.setup {
-            on_attach = function(_client, _bufnr)
-                require "lsp_signature".on_attach()
-            end
-        }
-
         lsp.setup()
     end,
 }
