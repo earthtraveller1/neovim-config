@@ -3,9 +3,9 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-        transparent_background = true,
+        transparent_background = false,
         dim_inactive = {
-            enabled = false,
+            enabled = true,
             shade = "dark",
             percentage = 0.15,
         }
