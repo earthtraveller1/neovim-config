@@ -46,6 +46,7 @@ return {
             'hls',
             'ols',
             'ts_ls',
+            'tinymist',
         })
 
         lsp.setup()
