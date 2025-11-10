@@ -47,6 +47,7 @@ return {
             'ols',
             'ts_ls',
             'tinymist',
+            'nushell'
         })
 
         lsp.setup()
