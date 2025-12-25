@@ -15,3 +15,8 @@ vim.keymap.set("n", "<leader>fu", vim.cmd.NvimTreeToggle)
 
 vim.keymap.set("n", "<A-l>", vim.cmd.tabn)
 vim.keymap.set("n", "<A-h>", vim.cmd.tabp)
+
+vim.keymap.set('n', "<leader>fo", function() vim.lsp.buf.format() end)
+vim.keymap.set('n', "<leader>la", function() vim.lsp.buf.code_action() end)
+vim.keymap.set('n', "<leader>rn", vim.lsp.buf.rename)
+vim.keymap.set('n', "<leader>gr", vim.lsp.buf.references)
