@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     require("earthtraveller1.plugins.autopairs"),
-    -- require("earthtraveller1.plugins.codeium"),
+    require("earthtraveller1.plugins.blink-cmp"),
     require("earthtraveller1.plugins.colorscheme"),
     require("earthtraveller1.plugins.fidget"),
     require("earthtraveller1.plugins.fugitive"),
@@ -30,3 +30,4 @@ require("lazy").setup({
     require("earthtraveller1.plugins.undotree"),
     require("earthtraveller1.plugins.vim-be-good"),
 })
+
