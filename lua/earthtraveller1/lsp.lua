@@ -47,4 +47,17 @@ vim.lsp.config('lua_ls', {
     }
 })
 
-vim.lsp.enable("lua_ls")
+vim.lsp.enable({
+    "lua_ls",
+    'clangd',
+    'gopls',
+    'pylsp',
+    'rust_analyzer',
+    -- 'sourcekit',
+    -- 'jdtls',
+    'zls',
+    'hls',
+    'ols',
+    'ts_ls',
+    'tinymist',
+})
