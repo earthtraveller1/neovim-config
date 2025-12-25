@@ -22,7 +22,6 @@ require("lazy").setup({
     require("earthtraveller1.plugins.jdtls"),
     require("earthtraveller1.plugins.leap"),
     require("earthtraveller1.plugins.lsp-signature"),
-    require("earthtraveller1.plugins.lsp-zero"),
     require("earthtraveller1.plugins.lualine"),
     require("earthtraveller1.plugins.nvim-surround"),
     require("earthtraveller1.plugins.nvim-tree"),
