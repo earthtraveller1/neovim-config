@@ -19,3 +19,12 @@ vim.api.nvim_create_autocmd({ "BufRead" }, {
     pattern = { "*.md", "*.txt" },
     callback = function() vim.opt_local.wrap = true end
 })
+
+vim.diagnostic.config({
+    virtual_text = true, -- Enables inline virtual text
+    signs = true,   -- Enables signs in the sign column
+    update_in_insert = false, -- Don't update while typing in insert mode
+    underline = true, -- Underlines problematic code
+    severity_sort = true, -- Sort diagnostics by severity
+})
+

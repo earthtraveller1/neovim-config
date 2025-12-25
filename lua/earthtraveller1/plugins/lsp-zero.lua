@@ -27,14 +27,6 @@ return {
             vim.keymap.set('n', "<leader>gr", vim.lsp.buf.references)
         end)
 
-        vim.diagnostic.config({
-            virtual_text = true, -- Enables inline virtual text
-            signs = true,   -- Enables signs in the sign column
-            update_in_insert = false, -- Don't update while typing in insert mode
-            underline = true, -- Underlines problematic code
-            severity_sort = true, -- Sort diagnostics by severity
-        })
-
         lsp.setup_servers({
             'clangd',
             'gopls',
