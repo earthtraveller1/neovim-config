@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd({ "BufRead" }, {
 })
 
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { '*' },
+  pattern = { '*.lua', '*.js', '*.json', '*.rs', '*.c', '*.ccp' },
   callback = function() vim.treesitter.start() end,
 })
 
