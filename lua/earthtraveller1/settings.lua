@@ -20,6 +20,11 @@ vim.api.nvim_create_autocmd({ "BufRead" }, {
     callback = function() vim.opt_local.wrap = true end
 })
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { '*' },
+  callback = function() vim.treesitter.start() end,
+})
+
 vim.diagnostic.config({
     virtual_text = true, -- Enables inline virtual text
     signs = true,   -- Enables signs in the sign column
