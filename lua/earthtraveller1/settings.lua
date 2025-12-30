@@ -15,24 +15,9 @@ vim.opt.cursorline = true
 
 vim.opt.colorcolumn = "80"
 
-vim.SupermavenStop()
-
 vim.api.nvim_create_autocmd({ "BufRead" }, {
     pattern = { "*.md", "*.txt" },
     callback = function() vim.opt_local.wrap = true end
-})
-
-vim.api.nvim_create_autocmd('FileType', {
-  callback = function(ev)
-      local installed = require("nvim-treesitter").get_installed("parsers")
-      local current_language = vim.treesitter.language.get_lang(ev.match)
-      for _, language in pairs(installed) do
-          if language == current_language then
-              vim.treesitter.start()
-              break
-          end
-      end
-  end,
 })
 
 vim.diagnostic.config({
