@@ -53,11 +53,12 @@ vim.lsp.enable({
     'gopls',
     'pylsp',
     'rust_analyzer',
-    -- 'sourcekit',
-    -- 'jdtls',
+    'sourcekit',
+    'jdtls',
     'zls',
     'hls',
     'ols',
     'ts_ls',
     'tinymist',
+    'powershell_es'
 })
