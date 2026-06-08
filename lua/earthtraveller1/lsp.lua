@@ -62,3 +62,7 @@ vim.lsp.enable({
     'tinymist',
     'powershell_es'
 })
+
+vim.lsp.config("powershell_es", {
+    bundle_path = 'c:\\Program Files\\Powershell Editor Services'
+})
