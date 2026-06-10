@@ -66,3 +66,8 @@ vim.lsp.enable({
 vim.lsp.config("powershell_es", {
     bundle_path = 'c:\\Program Files\\Powershell Editor Services'
 })
+
+vim.lsp.config("qmlls6", {
+    cmd = { "qmlls6" },
+    filetypes = { "qml" },
+})
